@@ -24,7 +24,7 @@ services:
     env_file:
       - ./.env.prod
     environment:
-      NEW_RELIC_APP_NAME: P10_pur_beurre_app_prod
+      NEW_RELIC_APP_NAME: P10_purbeurre_scaleway
     depends_on:
       - db
   nginx:
