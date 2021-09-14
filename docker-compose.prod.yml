@@ -16,13 +16,15 @@ services:
       - ./.env.prod.db
   web:
     image: web_img
-    command: gunicorn project_config.wsgi:application --bind 0.0.0.0:8000
+    command: newrelic-admin run-program gunicorn project_config.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - static_volume:/home/app/web/staticfiles
     expose:
       - 8000
     env_file:
       - ./.env.prod
+    environment:
+      NEW_RELIC_APP_NAME: P10_pur_beurre_app_prod
     depends_on:
       - db
   nginx:
@@ -37,3 +39,4 @@ services:
 volumes:
   postgres_data:
   static_volume:
+
