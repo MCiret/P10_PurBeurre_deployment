@@ -3,6 +3,9 @@
 =====================
 **Searching for food substitution in Open Food Facts french database**
 
+ℹ️ See my https://github.com/MCiret/P11_Upgrade ----> updated version of this project deployed on 🔗 https://purbeurre-mcda.tk/
+
+
 |Status badge| |UIlanguage badge| |vPython badge| |vBootstrap badge|
 
 *****************
